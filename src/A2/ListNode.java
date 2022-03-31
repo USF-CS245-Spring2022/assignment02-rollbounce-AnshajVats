@@ -1,39 +1,25 @@
 package A2;
 
-import java.util.Objects;
-
 public class ListNode {
     private final LinkList list = new LinkList();
+
     /**
-     * Appends the specified element to the end of this list (optional
-     * operation).
      *
-     * <p>Lists that support this operation may place limitations on what
-     * elements may be added to this list.  In particular, some
-     * lists will refuse to add null elements, and others will impose
-     * restrictions on the type of elements that may be added.  List
-     * classes should clearly specify in their documentation any restrictions
-     * on what elements may be added.
-     *
-     * @param item element to be appended to this list
-     * @return {@code true}
-     * @throws ClassCastException            if the class of the specified element
-     *                                       prevents it from being added to this list
-     * @throws NullPointerException          if the specified element is null and this
-     *                                       list does not permit null elements
-     * @throws IllegalArgumentException      if some property of this element
-     *                                       prevents it from being added to this list
+     * @param item element to be appended to this list by tail insertion
+     * @throws NullPointerException     if the specified element is null and this
+     *                                  list does not permit null elements
+     * @throws IllegalArgumentException if some property of this element
+     *                                  prevents it from being added to this list
      */
-    public boolean add(BounceBalls item) {
+    public void add(BounceBalls item) {
 
         if (item == null) {
             throw new NullPointerException();
         }
-        if(item.equals("")) {
+        if (item.equals("")) {
             throw new IllegalArgumentException();
         }
         list.tailInsert(item);
-        return true;
     }
 
 
@@ -51,7 +37,7 @@ public class ListNode {
         if (position < 0 || position > list.getSize()) {
             throw new java.lang.IndexOutOfBoundsException("Try again with any integer between 0 and" + list.getSize());
         }
-        while(count != position) {
+        while (count != position) {
             curr = curr.getNext();
             count++;
         }
@@ -63,6 +49,7 @@ public class ListNode {
     /**
      * Shows ListNode as a String, with each object in parentheses separated by
      * A ListNode of {1, 2, 3} should return the String "(1) -> (2) -> (3)".
+     *
      * @return String representation of the ListNode
      */
     @Override
@@ -83,9 +70,7 @@ public class ListNode {
         return sb.toString();
     }
 
-    public int getSize(){
-       return list.getSize();
+    public int getSize() {
+        return list.getSize();
     }
-
-
 }
