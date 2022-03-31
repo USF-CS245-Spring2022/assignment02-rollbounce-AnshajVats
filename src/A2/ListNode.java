@@ -49,7 +49,6 @@ public class ListNode {
      */
     @Override
     public String toString() {
-        //TODO implement this method
         StringBuilder sb = new StringBuilder();
         Node curr = list.getHead();
         sb.append("\"");
@@ -65,6 +64,10 @@ public class ListNode {
         return sb.toString();
     }
 
+    /**
+     *
+     * @return returns the size of the linkList.
+     */
     public int getSize() {
         return list.getSize();
     }
