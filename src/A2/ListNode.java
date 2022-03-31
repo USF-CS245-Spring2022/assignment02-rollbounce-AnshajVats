@@ -8,16 +8,11 @@ public class ListNode {
      * @param item element to be appended to this list by tail insertion
      * @throws NullPointerException     if the specified element is null and this
      *                                  list does not permit null elements
-     * @throws IllegalArgumentException if some property of this element
-     *                                  prevents it from being added to this list
      */
     public void add(BounceBalls item) {
 
         if (item == null) {
             throw new NullPointerException();
-        }
-        if (item.equals("")) {
-            throw new IllegalArgumentException();
         }
         list.tailInsert(item);
     }

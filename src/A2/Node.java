@@ -1,7 +1,7 @@
 package A2;
 
 public class Node {
-    private BounceBalls val;
+    private final BounceBalls val;
     private Node next;
 
     public Node(BounceBalls val) {
@@ -13,14 +13,6 @@ public class Node {
      */
     public BounceBalls getVal() {
         return val;
-    }
-
-    /**
-     *
-     * @param val Takes the value and adds it to the to the node.
-     */
-    public void setVal(BounceBalls val) {
-        this.val = val;
     }
 
     /**

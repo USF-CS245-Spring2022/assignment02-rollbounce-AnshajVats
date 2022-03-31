@@ -37,23 +37,6 @@ public class LinkList {
 
     }
 
-
-    /**
-     *
-     * @param size sets the size of the link list
-     */
-    public void setSize(int size) {
-        this.size = size;
-    }
-
-    /**
-     *
-     * @param head sets the head of the link ist
-     */
-    public void setHead(Node head) {
-        this.head = head;
-    }
-
     /**
      *
      * @return the head of the link list

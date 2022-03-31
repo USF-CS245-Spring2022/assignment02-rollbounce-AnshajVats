@@ -36,7 +36,7 @@ public class RollBounce extends JPanel implements ActionListener {
             radius = Integer.parseInt(p.getProperty("ball_radius"));
             balls = Integer.parseInt(p.getProperty("balls"));
         } catch (IOException e) {
-            System.out.println(e);
+            System.out.println("Not able to open the file");
         }
         Random rand = new Random();
         ls = new ListNode();

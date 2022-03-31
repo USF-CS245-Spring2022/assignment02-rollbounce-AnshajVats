@@ -50,7 +50,7 @@ public class BounceBalls {
         this.canvasWidth = canvasWidth;
         this.canvasHeight = canvasHeight;
         this.radius = radius;
-        valY = 0;
+        valY = getValY;
     }
 
     /**
@@ -108,45 +108,4 @@ public class BounceBalls {
         return posY1;
     }
 
-    /**
-     * @return the velocity of x
-     */
-    public int getValX() {
-        return valX;
-    }
-
-    /**
-     * @return the velocity of y
-     */
-    public int getGetValY() {
-        return valY;
-    }
-
-    /**
-     * @param posX1 set the position of x
-     */
-    public void setPosX1(int posX1) {
-        this.posX1 = posX1;
-    }
-
-    /**
-     * @param posY1 set the position of y
-     */
-    public void setPosY1(int posY1) {
-        this.posY1 = posY1;
-    }
-
-    /**
-     * @param valX set the velocity of x
-     */
-    public void setValX(int valX) {
-        this.valX = valX;
-    }
-
-    /**
-     * @param getValY set the velocity of y
-     */
-    public void setGetValY(int getValY) {
-        this.valY = getValY;
-    }
 }
