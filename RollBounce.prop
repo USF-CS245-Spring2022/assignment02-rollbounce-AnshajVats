@@ -1,5 +1,5 @@
 gravity=10
-friction=2
+friction= 2
 list=arraylist
 minspeed=5
 maxspeed=35
