@@ -72,7 +72,7 @@ public class BounceBalls {
             posY1 = 0;              // Place ball against edge
             valY = -(valY * friction);
         } else if (posY1 + radius > (canvasHeight - radius)) {
-            posY1 = canvasHeight - (radius * (friction + 1));
+            posY1 = canvasHeight - (radius * 3);
             valY = (int) -(valY * 0.5);
             bounce -= friction;
         }
