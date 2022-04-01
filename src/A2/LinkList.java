@@ -5,7 +5,6 @@ public class LinkList {
     private int size;
 
     /**
-     *
      * @return the size of the linkList
      */
     public int getSize() {
@@ -17,7 +16,6 @@ public class LinkList {
     }
 
     /**
-     *
      * @param val The ball to add
      *            Adds the ball at the end of the list.
      */
@@ -38,7 +36,6 @@ public class LinkList {
     }
 
     /**
-     *
      * @return the head of the link list
      */
     public Node getHead() {

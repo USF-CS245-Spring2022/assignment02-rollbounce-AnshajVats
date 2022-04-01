@@ -16,7 +16,6 @@ public class Node {
     }
 
     /**
-     *
      * @return returns the next value.
      */
     public Node getNext() {
@@ -24,7 +23,6 @@ public class Node {
     }
 
     /**
-     *
      * @param next Sets the next.
      */
     public void setNext(Node next) {

@@ -4,10 +4,9 @@ public class ListNode {
     private final LinkList list = new LinkList();
 
     /**
-     *
      * @param item element to be appended to this list by tail insertion
-     * @throws NullPointerException     if the specified element is null and this
-     *                                  list does not permit null elements
+     * @throws NullPointerException if the specified element is null and this
+     *                              list does not permit null elements
      */
     public void add(BounceBalls item) {
 
@@ -65,7 +64,6 @@ public class ListNode {
     }
 
     /**
-     *
      * @return returns the size of the linkList.
      */
     public int getSize() {
